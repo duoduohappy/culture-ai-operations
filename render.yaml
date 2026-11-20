@@ -1,29 +1,27 @@
 services:
-  - type: web
-    name: culture-management-ai
-    runtime: node
-    plan: starter
-    buildCommand: npm ci --omit=dev --ignore-scripts
-    startCommand: npm start
-    healthCheckPath: /api/health
-    disk:
-      name: management-data
-      mountPath: /var/data
-      sizeGB: 1
-    envVars:
-      - key: NODE_VERSION
-        value: 24.21.0
-      - key: HOST
-        value: 0.0.0.0
-      - key: DATA_DIR
-        value: /var/data
-      - key: DEMO_PASSWORD
-        generateValue: true
-      - key: AI_PROVIDER
-        value: compatible
-      - key: AI_BASE_URL
-        sync: false
-      - key: AI_MODEL
-        sync: false
-      - key: AI_API_KEY
-        sync: false
+- type: web
+  name: culture-ai-operations
+  runtime: node
+  plan: free
+  buildCommand: npm ci --omit=dev --ignore-scripts
+  startCommand: npm start
+  healthCheckPath: /api/health
+  envVars:
+  - key: NODE_VERSION
+    value: 24.21.0
+  - key: HOST
+    value: 0.0.0.0
+  - key: DATA_DIR
+    value: /tmp/culture-ai-operations
+  - key: DEMO_PASSWORD
+    generateValue: true
+  - key: AI_PROVIDER
+    value: compatible
+  - key: AI_BASE_URL
+    value: ''
+  - key: AI_MODEL
+    value: ''
+  - key: AI_API_KEY
+    value: ''
+  - key: DEMO_MODE
+    value: ephemeral

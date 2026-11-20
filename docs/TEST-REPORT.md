@@ -12,4 +12,4 @@
 
 未完成完整浏览器视觉验收；当前已做 DOM 和接口验证。没有真实银行付款或真实组织 SSO 测试。
 
-Render 配置已通过官方 JSON Schema 结构校验，两个项目各自独立服务和持久磁盘。SQLite 在线备份已生成并通过 PRAGMA integrity_check；该结果不代替真实 Render 部署和重启验收。
+Render 配置已通过官方 JSON Schema 结构校验，两个项目各自独立服务；默认免费配置不挂载磁盘，重启后的数据保留不属于云端验收项。SQLite 在线备份已生成并通过 PRAGMA integrity_check；该结果不代替真实 Render 部署和重启验收。

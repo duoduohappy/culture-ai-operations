@@ -3,5 +3,7 @@
   "valid": true,
   "scope": "Official JSON Schema structural validation; URI format checking disabled; not a Render deployment",
   "actualDeployment": false,
-  "checkedAt": "2026-11-20T10:13:36.036694+00:00"
+  "checkedAt": "2026-11-20T11:07:03.340340+00:00",
+  "mode": "free-ephemeral",
+  "paidResources": false
 }
