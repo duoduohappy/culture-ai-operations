@@ -1,0 +1,161 @@
+{
+  "verifiedAt": "2026-11-20T09:57:42.437Z",
+  "kind": "实际本机 HTTP、SQLite 和本地模型端到端测试",
+  "projectId": "LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6",
+  "purchaseId": "LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b",
+  "expected": {
+    "budget": 50000,
+    "paid": 3200,
+    "committed": 0,
+    "available": 46800,
+    "additionalEntries": 1
+  },
+  "actual": {
+    "id": "LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6",
+    "title": "面试验收音乐会 · 2026-11-20T09:57",
+    "budget": 50000,
+    "baseline_spent": 0,
+    "status": "已批准",
+    "created_by": "applicant",
+    "version": 3,
+    "created_at": "2026-11-20T09:57:37.836Z",
+    "paid": 3200,
+    "committed": 0,
+    "available": 46800
+  },
+  "requestCount": 22,
+  "events": [
+    {
+      "route": "login",
+      "status": 200,
+      "elapsedMs": 79
+    },
+    {
+      "route": "login",
+      "status": 200,
+      "elapsedMs": 35
+    },
+    {
+      "route": "login",
+      "status": 200,
+      "elapsedMs": 35
+    },
+    {
+      "route": "login",
+      "status": 200,
+      "elapsedMs": 34
+    },
+    {
+      "route": "login",
+      "status": 200,
+      "elapsedMs": 31
+    },
+    {
+      "route": "snapshot",
+      "status": 200,
+      "elapsedMs": 5
+    },
+    {
+      "route": "projects",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "projects/LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6/submit",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "projects/LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6/approve",
+      "status": 403,
+      "elapsedMs": 2
+    },
+    {
+      "route": "projects/LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6/approve",
+      "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "purchases",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/submit",
+      "status": 200,
+      "elapsedMs": 14
+    },
+    {
+      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/approve",
+      "status": 200,
+      "elapsedMs": 5
+    },
+    {
+      "route": "snapshot",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/order",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/pay",
+      "status": 409,
+      "elapsedMs": 2
+    },
+    {
+      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/receive",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/pay",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/pay",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "snapshot",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "evidence",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "analyze",
+      "status": 200,
+      "elapsedMs": 4550
+    }
+  ],
+  "ai": {
+    "model": "interview-qwen",
+    "elapsedMs": 4544,
+    "text": "资料不足，无法断言无风险。\n依据：[S1]",
+    "citationValidation": {
+      "valid": true,
+      "citedIds": [
+        "DOC-7e46a472-9463-4f62-ab4b-f642a4470130"
+      ],
+      "invalidSources": [],
+      "missingCitation": false
+    },
+    "documents": [
+      {
+        "source": "S1",
+        "id": "DOC-7e46a472-9463-4f62-ab4b-f642a4470130",
+        "title": "舞台耗材报价单",
+        "kind": "报价单",
+        "content": "供应商：虚构舞台供应商。舞台耗材与安装总价 3200 元。包含材料、运输和安装，不含税务发票。交付日期为开演前一天。未提供签署合同及质量保修条款。"
+      }
+    ]
+  }
+}

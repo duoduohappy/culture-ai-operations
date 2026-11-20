@@ -1,0 +1,7 @@
+{
+  "schema": "https://render.com/schema/render.yaml.json",
+  "valid": true,
+  "scope": "Official JSON Schema structural validation; URI format checking disabled; not a Render deployment",
+  "actualDeployment": false,
+  "checkedAt": "2026-11-20T10:13:36.036694+00:00"
+}

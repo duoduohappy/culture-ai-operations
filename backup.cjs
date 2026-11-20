@@ -1,0 +1,3 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path');require('dotenv').config({quiet:true});const {DatabaseSync,backup}=require('node:sqlite');
+const dir=process.env.DATA_DIR||path.join(__dirname,'data'),source=path.join(dir,'business.sqlite');if(!fs.existsSync(source))throw Error('数据库尚未初始化');const out=path.join(dir,'backups');fs.mkdirSync(out,{recursive:true});const file=path.join(out,'business-'+new Date().toISOString().replaceAll(':','-')+'.sqlite');const db=new DatabaseSync(source,{readOnly:true});backup(db,file).then(()=>{db.close();console.log('SQLite consistent backup:',file);}).catch(e=>{db.close();console.error(e.message);process.exitCode=1});

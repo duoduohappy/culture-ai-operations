@@ -1,0 +1,1 @@
+const fs=require('node:fs'),path=require('node:path'),zlib=require('node:zlib');module.exports.load=()=>{const plain=path.join(__dirname,'data/demo.json');return JSON.parse(fs.existsSync(plain)?fs.readFileSync(plain,'utf8'):zlib.gunzipSync(fs.readFileSync(plain+'.gz')).toString('utf8'));};

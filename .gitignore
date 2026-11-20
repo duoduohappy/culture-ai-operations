@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.gateway
+*.log
+data/*.sqlite*
+data/integration-events.jsonl
+data/gateway-results.json
+data/gateway-media/
+data/backups/
+data/e2e-frames/
+
+# Compressed synthetic seed is versioned; optional unpacked copy stays local.
+data/demo.json
