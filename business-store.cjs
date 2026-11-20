@@ -4,7 +4,7 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 class BusinessError extends Error{constructor(message,status=409){super(message);this.status=status;}}
 const fail=(message,status)=>{throw new BusinessError(message,status)};
 const now=()=>new Date().toISOString();
-const money=value=>{const n=Number(value);if(!Number.isFinite(n)||n<=0||n>100000000||Math.abs(n*100-Math.round(n*100))>0.00001)fail('金额须为正数，最多两位小数',400);return Math.round(n*100)};
+const money=value=>{if(!['number','string'].includes(typeof value)||typeof value==='string'&&!value.trim())fail('金额格式无效',400);const n=Number(value);if(!Number.isFinite(n)||n<=0||n>100000000||Math.abs(n*100-Math.round(n*100))>0.00001)fail('金额须为正数，最多两位小数',400);return Math.round(n*100)};
 const safeText=(v,max=200)=>{if(typeof v!=='string'||!v.trim()||v.length>max)fail('文本字段为空或过长',400);return v.trim()};
 const accounts=[['applicant','业务申请人','applicant'],['approver','预算审批人','approver'],['buyer','采购执行人','buyer'],['warehouse','验收人','warehouse'],['finance','财务登记人','finance']];
 class BusinessStore{

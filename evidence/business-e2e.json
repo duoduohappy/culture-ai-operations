@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-20T09:57:42.437Z",
+  "verifiedAt": "2026-11-20T11:19:23.391Z",
   "kind": "实际本机 HTTP、SQLite 和本地模型端到端测试",
-  "projectId": "LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6",
-  "purchaseId": "LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b",
+  "projectId": "LIVE-PRJ-8209b2f4-0c52-4bd7-8b78-bdc1b1cce586",
+  "purchaseId": "LIVE-PO-cd375651-b4ad-4178-8f11-8f4aabe6fa7f",
   "expected": {
     "budget": 50000,
     "paid": 3200,
@@ -11,14 +11,14 @@
     "additionalEntries": 1
   },
   "actual": {
-    "id": "LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6",
-    "title": "面试验收音乐会 · 2026-11-20T09:57",
+    "id": "LIVE-PRJ-8209b2f4-0c52-4bd7-8b78-bdc1b1cce586",
+    "title": "面试验收音乐会 · 2026-11-20T11:19",
     "budget": 50000,
     "baseline_spent": 0,
     "status": "已批准",
     "created_by": "applicant",
     "version": 3,
-    "created_at": "2026-11-20T09:57:37.836Z",
+    "created_at": "2026-11-20T11:19:19.662Z",
     "paid": 3200,
     "committed": 0,
     "available": 46800
@@ -28,17 +28,7 @@
     {
       "route": "login",
       "status": 200,
-      "elapsedMs": 79
-    },
-    {
-      "route": "login",
-      "status": 200,
-      "elapsedMs": 35
-    },
-    {
-      "route": "login",
-      "status": 200,
-      "elapsedMs": 35
+      "elapsedMs": 83
     },
     {
       "route": "login",
@@ -48,47 +38,57 @@
     {
       "route": "login",
       "status": 200,
-      "elapsedMs": 31
+      "elapsedMs": 34
+    },
+    {
+      "route": "login",
+      "status": 200,
+      "elapsedMs": 32
+    },
+    {
+      "route": "login",
+      "status": 200,
+      "elapsedMs": 32
     },
     {
       "route": "snapshot",
       "status": 200,
-      "elapsedMs": 5
+      "elapsedMs": 6
     },
     {
       "route": "projects",
       "status": 200,
-      "elapsedMs": 3
+      "elapsedMs": 5
     },
     {
-      "route": "projects/LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6/submit",
+      "route": "projects/LIVE-PRJ-8209b2f4-0c52-4bd7-8b78-bdc1b1cce586/submit",
       "status": 200,
-      "elapsedMs": 3
+      "elapsedMs": 4
     },
     {
-      "route": "projects/LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6/approve",
+      "route": "projects/LIVE-PRJ-8209b2f4-0c52-4bd7-8b78-bdc1b1cce586/approve",
       "status": 403,
       "elapsedMs": 2
     },
     {
-      "route": "projects/LIVE-PRJ-258f0e9d-01ac-40dc-85de-25b8a2b15db6/approve",
+      "route": "projects/LIVE-PRJ-8209b2f4-0c52-4bd7-8b78-bdc1b1cce586/approve",
       "status": 200,
       "elapsedMs": 4
     },
     {
       "route": "purchases",
       "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "purchases/LIVE-PO-cd375651-b4ad-4178-8f11-8f4aabe6fa7f/submit",
+      "status": 200,
       "elapsedMs": 3
     },
     {
-      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/submit",
+      "route": "purchases/LIVE-PO-cd375651-b4ad-4178-8f11-8f4aabe6fa7f/approve",
       "status": 200,
-      "elapsedMs": 14
-    },
-    {
-      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/approve",
-      "status": 200,
-      "elapsedMs": 5
+      "elapsedMs": 4
     },
     {
       "route": "snapshot",
@@ -96,29 +96,29 @@
       "elapsedMs": 3
     },
     {
-      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/order",
+      "route": "purchases/LIVE-PO-cd375651-b4ad-4178-8f11-8f4aabe6fa7f/order",
       "status": 200,
       "elapsedMs": 3
     },
     {
-      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/pay",
+      "route": "purchases/LIVE-PO-cd375651-b4ad-4178-8f11-8f4aabe6fa7f/pay",
       "status": 409,
       "elapsedMs": 2
     },
     {
-      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/receive",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/pay",
+      "route": "purchases/LIVE-PO-cd375651-b4ad-4178-8f11-8f4aabe6fa7f/receive",
       "status": 200,
       "elapsedMs": 3
     },
     {
-      "route": "purchases/LIVE-PO-fe82fba1-5b9c-4bc4-81b9-ba3bd18a387b/pay",
+      "route": "purchases/LIVE-PO-cd375651-b4ad-4178-8f11-8f4aabe6fa7f/pay",
       "status": 200,
-      "elapsedMs": 1
+      "elapsedMs": 4
+    },
+    {
+      "route": "purchases/LIVE-PO-cd375651-b4ad-4178-8f11-8f4aabe6fa7f/pay",
+      "status": 200,
+      "elapsedMs": 2
     },
     {
       "route": "snapshot",
@@ -128,22 +128,23 @@
     {
       "route": "evidence",
       "status": 200,
-      "elapsedMs": 2
+      "elapsedMs": 3
     },
     {
       "route": "analyze",
       "status": 200,
-      "elapsedMs": 4550
+      "elapsedMs": 3682
     }
   ],
   "ai": {
     "model": "interview-qwen",
-    "elapsedMs": 4544,
+    "elapsedMs": 3672,
     "text": "资料不足，无法断言无风险。\n依据：[S1]",
     "citationValidation": {
       "valid": true,
+      "structured": true,
       "citedIds": [
-        "DOC-7e46a472-9463-4f62-ab4b-f642a4470130"
+        "DOC-966ec96b-aed2-462a-a918-975f07aea8c4"
       ],
       "invalidSources": [],
       "missingCitation": false
@@ -151,7 +152,7 @@
     "documents": [
       {
         "source": "S1",
-        "id": "DOC-7e46a472-9463-4f62-ab4b-f642a4470130",
+        "id": "DOC-966ec96b-aed2-462a-a918-975f07aea8c4",
         "title": "舞台耗材报价单",
         "kind": "报价单",
         "content": "供应商：虚构舞台供应商。舞台耗材与安装总价 3200 元。包含材料、运输和安装，不含税务发票。交付日期为开演前一天。未提供签署合同及质量保修条款。"

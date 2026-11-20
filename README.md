@@ -39,3 +39,7 @@ npm run test:business
 源码包不包含 node_modules、.env、运行中的数据库、OBS 安装目录或模型权重。不要将本机配置文件提交到公开仓库。
 
 基准测试数据以 data/demo.json.gz 提交，程序自动解压读取；仍包含完整的 15,184 条记录。
+
+## 回归验收
+
+执行 `npm run test:all` 可复现模块、异常输入、业务及免费环境检查；真实模型/OBS 验证单独执行 `npm run test:e2e`。详见 [本轮回归报告](docs/QA-REPORT.md)。

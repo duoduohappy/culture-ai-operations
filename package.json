@@ -8,7 +8,11 @@
     "test:data": "node test-data.cjs",
     "test:business": "node test-business.cjs",
     "test:e2e": "node test-e2e.cjs",
-    "backup": "node backup.cjs"
+    "backup": "node backup.cjs",
+    "test:regressions": "node test-regressions.cjs",
+    "test:http": "node test-http.cjs",
+    "test:free-render": "node test-free-render.cjs",
+    "test:all": "node test-all.cjs"
   },
   "dependencies": {
     "dotenv": "^18.0.10"
